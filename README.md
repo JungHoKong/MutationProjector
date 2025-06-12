@@ -62,9 +62,9 @@ The code for pre-training is `/src/pretrain.py'.
 
 ## Cite
 Please cite the **MutationProjector** paper if using this repo:
-1. `MutationProjector`<br><br>
+###1. `MutationProjector`<br><br>
 If using protein interaction graphs or other tools, please cite the papers below:<br>
-2. `Networks`
+###2. `Networks`
 - *BioPlex*: Huttlin, E. L. et al. Dual proteome-scale networks reveal cell-specific remodeling of the human interactome. Cell 184, 3022–3040.e28 (2021)
 - *SIGNOR*: Lo Surdo, P. et al. SIGNOR 3.0, the SIGnaling network open resource 3.0: 2022 update. Nucleic Acids Res 51, D631–D637 (2023)
 - *SignaLink*: Csabai, L. et al. SignaLink3: a multi-layered resource to uncover tissue-specific signaling networks. Nucleic Acids Res 50, D701–D709 (2022)
@@ -77,13 +77,13 @@ If using protein interaction graphs or other tools, please cite the papers below
 - *DDRAM*: Kratz, A. et al. A multi-scale map of protein assemblies in the DNA damage response. Cell Syst 14, 447–463.e8 (2023)
 - *PCNet v1.3*: Huang, J. K. et al. Systematic Evaluation of Molecular Networks for Discovery of Disease Genes. Cell Syst 6, 484–495.e5 (2018)
 - *STRING v12*: Szklarczyk, D. et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res 51, D638–D646 (2023)<br>
-3. 'Network data repository'
+###3. `Network data repository`
 - *NDEx*: Pratt, D. et al. NDEx, the Network Data Exchange. Cell Syst 1, 302–305 (2015)<br>
-4. `tumor mutation burden`
+###4. `tumor mutation burden`
 - *Maftools*: Mayakonda, A., Lin, D.-C., Assenov, Y., Plass, C. & Koeffler, H. P. Maftools: efficient and comprehensive analysis of somatic variants in cancer. Genome Res. 28, 1747–1756 (2018)<br>
-5. `aneuploidy`
+###5. `aneuploidy`
 - *ASCETS*: Spurr, L. F. et al. Quantification of aneuploidy in targeted sequencing data using ASCETS. Bioinformatics 37, 2461–2463 (2021)<br>
-6. `mutational signatures (targeted sequencing)`
+###6. `mutational signatures (targeted sequencing)`
 - *MESiCA*: Yaacov, A. et al. Cancer mutational signatures identification in clinical assays using neural embedding-based representations. Cell Rep Med 5, 101608 (2024)<br>
-7. `mutational signatures (whole exome/genome sequencing)`
+###7. `mutational signatures (whole exome/genome sequencing)`
 - *SigProfiler*: Alexandrov, L. B. et al. The repertoire of mutational signatures in human cancer. Nature 578, 94–101 (2020)
