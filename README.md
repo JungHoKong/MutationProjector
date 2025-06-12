@@ -32,7 +32,7 @@ Also, make sure that you have all the tab-delimited files under the folder creat
 2. *cna.txt*
 3. *cnd.txt*
 4. *covariates.txt*
-5. [optional] *outcomes.txt* (if further training MutationProjector on specific task or dataset). Include two columns, `sample` and `outcomes`. `outcomes` column should contain binary outcome label (either 0 or 1). 
+5. [optional] *outcomes.txt*<br>(if further training MutationProjector on specific task or dataset). Include two columns, `sample` and `outcomes`. `outcomes` column should contain binary outcome label (either 0 or 1). 
 
 
 Example files are under `./data/downstream_data/sample` folder.
@@ -43,15 +43,15 @@ Example files are under `./data/downstream_data/sample` folder.
 ## Making predictions using the pre-trained MutationProjector
 To make predictions for the task of your interest using the pre-trained MutationProjector, execute the following:
 1. Make sure you have all the *mut.txt*, *cna.txt*, *cnd.txt*, *covariates.txt* and *outcomes.txt* files under `/data/downstream_data/train_dataset/{your_dataset_name}` and `/data/downstream_data/eval_dataset/{your_dataset_name}`<br>
-(please change {your_dataset_name} to the desired name)
+(please change {your_dataset_name} to the desired name)<br>
 2. Run the model in a GPU server by execute the following in the `/src/` folder:<br>
 `python predict.py -downstream_train [name of the downstream dataset to additionally train]
                    -downstream_eval [name of the downstream dataset to predict]
 				   -max_depth [max depth for downstream random forest model] [OPTIONAL]
 				   -n_estimators [number of estimators for downstream random forest model] [OPTIONAL]
-				   -o [file output prefix] [OPTIONAL]`
+				   -o [file output prefix] [OPTIONAL]`<br>
 **Sample command**
-`python predict.py -downstream_train`
+`python predict.py -downstream_train`<br>
 3. Output files 
 - Predicted probabilities for each tumor samples (`/data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt`)
 
@@ -62,8 +62,8 @@ The code for pre-training is `/src/pretrain.py'.
 
 ## Cite
 Please cite the **MutationProjector** paper if using this repo:
-1. `MutationProjector`
-If using protein interaction graphs or other tools, please cite the papers below:
+1. `MutationProjector`<br>
+If using protein interaction graphs or other tools, please cite the papers below:<br>
 2. `Networks`
 - *BioPlex*: Huttlin, E. L. et al. Dual proteome-scale networks reveal cell-specific remodeling of the human interactome. Cell 184, 3022–3040.e28 (2021)
 - *SIGNOR*: Lo Surdo, P. et al. SIGNOR 3.0, the SIGnaling network open resource 3.0: 2022 update. Nucleic Acids Res 51, D631–D637 (2023)
@@ -76,14 +76,14 @@ If using protein interaction graphs or other tools, please cite the papers below
 - *SynLethDB v2.0*: Wang, J. et al. SynLethDB 2.0: a web-based knowledge graph database on synthetic lethality for novel anticancer drug discovery. Database (Oxford) 2022, (2022)
 - *DDRAM*: Kratz, A. et al. A multi-scale map of protein assemblies in the DNA damage response. Cell Syst 14, 447–463.e8 (2023)
 - *PCNet v1.3*: Huang, J. K. et al. Systematic Evaluation of Molecular Networks for Discovery of Disease Genes. Cell Syst 6, 484–495.e5 (2018)
-- *STRING v12*: Szklarczyk, D. et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res 51, D638–D646 (2023)
+- *STRING v12*: Szklarczyk, D. et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses for any sequenced genome of interest. Nucleic Acids Res 51, D638–D646 (2023)<br>
 3. 'Network data repository'
-- *NDEx*: Pratt, D. et al. NDEx, the Network Data Exchange. Cell Syst 1, 302–305 (2015)
+- *NDEx*: Pratt, D. et al. NDEx, the Network Data Exchange. Cell Syst 1, 302–305 (2015)<br>
 4. `tumor mutation burden`
-- *Maftools*: Mayakonda, A., Lin, D.-C., Assenov, Y., Plass, C. & Koeffler, H. P. Maftools: efficient and comprehensive analysis of somatic variants in cancer. Genome Res. 28, 1747–1756 (2018)
+- *Maftools*: Mayakonda, A., Lin, D.-C., Assenov, Y., Plass, C. & Koeffler, H. P. Maftools: efficient and comprehensive analysis of somatic variants in cancer. Genome Res. 28, 1747–1756 (2018)<br>
 5. `aneuploidy`
-- *ASCETS*: Spurr, L. F. et al. Quantification of aneuploidy in targeted sequencing data using ASCETS. Bioinformatics 37, 2461–2463 (2021)
+- *ASCETS*: Spurr, L. F. et al. Quantification of aneuploidy in targeted sequencing data using ASCETS. Bioinformatics 37, 2461–2463 (2021)<br>
 6. `mutational signatures (targeted sequencing)`
-- *MESiCA*: Yaacov, A. et al. Cancer mutational signatures identification in clinical assays using neural embedding-based representations. Cell Rep Med 5, 101608 (2024)
+- *MESiCA*: Yaacov, A. et al. Cancer mutational signatures identification in clinical assays using neural embedding-based representations. Cell Rep Med 5, 101608 (2024)<br>
 7. `mutational signatures (whole exome/genome sequencing)`
 - *SigProfiler*: Alexandrov, L. B. et al. The repertoire of mutational signatures in human cancer. Nature 578, 94–101 (2020)
