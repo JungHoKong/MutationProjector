@@ -57,6 +57,7 @@ python predict.py
 3. Output files 
 - Predicted probabilities for each tumor samples<br>
 `/data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt`
+Example files are under `./data/downstream_data/sample` folder.
 
 ## Code used for pre-training
 MutationProjector is pre-trained using self-supervised learning and weakly supervised learning. 
