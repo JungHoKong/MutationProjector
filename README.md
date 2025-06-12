@@ -52,12 +52,11 @@ python predict.py
 		   -max_depth [max depth for downstream random forest model] [OPTIONAL] 
 		   -n_estimators [number of estimators for downstream random forest model] [OPTIONAL] 
 		   -o [file output prefix] [OPTIONAL]  
-</pre></code>
+</code></pre>
 <br>				   
 3. Output files 
 - Predicted probabilities for each tumor samples<br>
-`/data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt`
-Example files are under `./data/downstream_data/sample` folder.
+- Output file available at: `/data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt`
 
 ## Code used for pre-training
 MutationProjector is pre-trained using self-supervised learning and weakly supervised learning. 
