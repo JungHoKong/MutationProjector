@@ -46,19 +46,19 @@ To make predictions for the task of your interest using the pre-trained Mutation
 (please change {your_dataset_name} to the desired name)<br>
 2. Run the model in a GPU server by execute the following in the `/src/` folder:<br>
 
-```bash
+<pre><code>
 python predict.py 
 		   -downstream_train [name of the downstream dataset to additionally train] 
 		   -downstream_eval [name of the downstream dataset to predict] 
 		   -max_depth [max depth for downstream random forest model] [OPTIONAL] 
 		   -n_estimators [number of estimators for downstream random forest model] [OPTIONAL] 
 		   -o [file output prefix] [OPTIONAL]  
-```
+</code></pre>
 
 <br>				   
 3. Output files 
 - Predicted probabilities for each tumor samples<br>
-- Output file available at: `/data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt`
+- Output file available at: /data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt
 
 ## Code used for pre-training
 MutationProjector is pre-trained using self-supervised learning and weakly supervised learning. 
