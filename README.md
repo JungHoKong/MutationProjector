@@ -55,7 +55,7 @@ python predict.py
 </pre></code>
 <br>				   
 3. Output files 
-- Predicted probabilities for each tumor samples
+- Predicted probabilities for each tumor samples<br>
 - Generated result file: `/data/downstream_data/eval_dataset/{your_dataset_name}/TransferLearning_predictions.txt`
 
 ## Code used for pre-training
