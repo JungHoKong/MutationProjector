@@ -45,6 +45,7 @@ To make predictions for the task of your interest using the pre-trained Mutation
 1. Make sure you have all the *mut.txt*, *cna.txt*, *cnd.txt*, *covariates.txt* and *outcomes.txt* files under `/data/downstream_data/train_dataset/{your_dataset_name}` and `/data/downstream_data/eval_dataset/{your_dataset_name}`<br>
 (please change {your_dataset_name} to the desired name)<br>
 2. Run the model in a GPU server by execute the following in the `/src/` folder:<br>
+
 <pre><code>
 python predict.py 
 		   -downstream_train [name of the downstream dataset to additionally train] 
@@ -53,6 +54,7 @@ python predict.py
 		   -n_estimators [number of estimators for downstream random forest model] [OPTIONAL] 
 		   -o [file output prefix] [OPTIONAL]  
 </code></pre>
+
 <br>				   
 3. Output files 
 - Predicted probabilities for each tumor samples<br>
