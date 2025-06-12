@@ -47,12 +47,14 @@ To make predictions for the task of your interest using the pre-trained Mutation
 2. Run the model in a GPU server by execute the following in the `/src/` folder:<br>
 
 <pre><code>
+```bash
 python predict.py 
 		   -downstream_train [name of the downstream dataset to additionally train] 
 		   -downstream_eval [name of the downstream dataset to predict] 
 		   -max_depth [max depth for downstream random forest model] [OPTIONAL] 
 		   -n_estimators [number of estimators for downstream random forest model] [OPTIONAL] 
 		   -o [file output prefix] [OPTIONAL]  
+```
 </code></pre>
 
 <br>				   
