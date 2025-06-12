@@ -62,7 +62,7 @@ The code for pre-training is `/src/pretrain.py'.
 
 ## Cite
 Please cite the **MutationProjector** paper if using this repo:
-1. `MutationProjector`<br>
+1. `MutationProjector`<br><br>
 If using protein interaction graphs or other tools, please cite the papers below:<br>
 2. `Networks`
 - *BioPlex*: Huttlin, E. L. et al. Dual proteome-scale networks reveal cell-specific remodeling of the human interactome. Cell 184, 3022–3040.e28 (2021)
